@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const ticker = [
   { symbol: "AAPL", price: "182.63", change: "+1.24%" },
@@ -233,8 +234,15 @@ export default function Home() {
         <div style={{ maxWidth: "1100px", margin: "0 auto", padding: "0 2rem" }}
              className="flex items-center justify-between h-14">
           <div className="flex items-center gap-2">
-            <span className="green font-bold text-sm tracking-widest">CALL</span>
-            <span className="text-white font-bold text-sm tracking-widest">ALGO</span>
+            <Image
+              src="/onlyLogo.png"
+              alt="CallAlgo logo"
+              width={32}
+              height={32}
+              priority
+            />
+            <span className="green font-bold text-xl tracking-widest">CALL</span>
+            <span className="text-white font-bold text-xl tracking-widest">ALGO</span>
           </div>
           <div className="hidden sm:flex items-center gap-8">
             {["Learn", "Build", "Trade", "Automate"].map((item) => (
