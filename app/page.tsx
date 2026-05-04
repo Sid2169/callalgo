@@ -221,7 +221,7 @@ export default function Home() {
         /* Nav */
         nav {
           border-bottom: 1px solid var(--border);
-          background: rgba(0,0,0,0.92);
+          background: rgba(71, 85, 105, 1);
           backdrop-filter: blur(8px);
           position: sticky;
           top: 0;
@@ -237,8 +237,8 @@ export default function Home() {
             <Image
               src="/onlyLogo.png"
               alt="CallAlgo logo"
-              width={32}
-              height={32}
+              width={52}
+              height={52}
               priority
             />
             <span className="green font-bold text-xl tracking-widest">CALL</span>
@@ -247,7 +247,7 @@ export default function Home() {
           <div className="hidden sm:flex items-center gap-8">
             {["Learn", "Build", "Trade", "Automate"].map((item) => (
               <a key={item} href="#"
-                 className="text-xs tracking-widest text-zinc-500 hover:text-white transition-colors"
+                 className="text-xs tracking-widest text-slate-100 hover:text-white transition-colors"
                  style={{ fontFamily: "'DM Sans', sans-serif" }}>
                 {item.toUpperCase()}
               </a>
